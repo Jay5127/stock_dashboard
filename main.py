@@ -44,10 +44,16 @@ with pricing_data:
         st.write('Risk Adj. Return is',annual_return/(std*100))
 
 
+
+
+
 from stocknews import StockNews
 with news:
     st.header('News')
-    if search and start and end:
+    if KeyError():
+        st.error('No data available for news')
+
+    elif search and start and end:
         sn = StockNews(search , save_news= False)
         df_news = sn.read_rss()
         for i in range(10):
