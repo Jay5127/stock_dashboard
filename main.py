@@ -6,7 +6,7 @@ import plotly.express as px
 
 
 st.title('Stock Dashboard')
-search = st.sidebar.text_input('Search Name')
+search = st.sidebar.text_input('Ticker')
 start = st.sidebar.date_input('Start Date')
 end = st.sidebar.date_input('End Date')
 
